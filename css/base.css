@@ -60,7 +60,6 @@ img {
     text-align: center;
     font-weight: bold; 
     line-height: 50px;
-    column-span: all;
     margin-bottom: 30px;
     margin: auto;
 }
@@ -79,6 +78,8 @@ a.button.active {color: darkred; font-weight: bolder;}
 
 /* Style the header */
 .header {
+    margin: auto;
+    width: 1560px;
     text-align: left;
     padding: 10px;
     font-size: 30px;
@@ -152,6 +153,14 @@ a.menu.active {
         -moz-column-count: 2; /* Firefox */
         column-count: 2;
     }
+
+    .header {
+        margin: auto;
+        width: 1040px;
+        text-align: left;
+        padding: 10px;
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 1060px) {
@@ -162,5 +171,13 @@ a.menu.active {
         -webkit-column-count: 1; /* Chrome, Safari, Opera */
         -moz-column-count: 1; /* Firefox */
         column-count: 1;
+    }
+
+    .header {
+        margin: auto;
+        width: 520px;
+        text-align: left;
+        padding: 10px;
+        font-size: 30px;
     }
 }
