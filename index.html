@@ -26,161 +26,113 @@
         <link rel="icon" href="favicon.ico">
         <!-- <link href="styles.css" rel="stylesheet" type="text/css"> -->
         <base target="_blank">
+        <link rel="stylesheet" type="text/css" href="css/font.css">    
+        <link rel="stylesheet" type="text/css" href="css/base.css">    
     </head>
 
-    <style>
-        a:link {color: blue; font-weight: bold}
-        a:visited {color: blue; font-weight: bold}
-        a:hover {color: crimson; font-weight: bold}
-        a:active {color: darkred; font-weight: bolder}
-
-        * {
-            box-sizing: border-box;
-        }
-        
-        img {width: 500px}
-        
-        body {
-            background: #71bfff; 
-            color: White; 
-            font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-        }
-
-        /* Style the header */
-        .header {
-            text-align: left;
-            padding: 10px;
-            font-size: 35px;
-        }
-
-        img.header {width: 200; height: 200; padding: 0px}
-
-        /* Create three equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 520px;
-            padding: 10px;
-        }
-
-        .featured {text-align: center; vertical-align: top}
-        .post {vertical-align: top}
-        .post-title {text-align: center; vertical-align: top; background-color: blue;}
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Style the footer */
-        .footer {
-            padding: 10px;
-            text-align: center;
-        }
-
-        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-        @media (max-width: 600px) {
-            .column {
-                width: 520px;
-            }
-        }
-    </style>
-
     <body lang="sl">
-        <div class="header">
-            <img class="header" src="dam-pav.logo.jpg" alt="">
+        <div class="header" id="top">
+            <table>
+                <tr>
+                    <td>
+                        <img class="header" src="img/dam-pav.logo.jpg" alt="">
+                    </td>
+                    <td>
+                        <div class="header">
+                            Dodatki za Kodi:
+                            <li>plugin.rtvslo.podcast
+                            <li>plugin.rtvslo.live
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a class="menu" href="#tvpodcast" target="_self"><span class="menu">TV podcasti</span></a>
+                        <a class="menu" href="#tvlive" target="_self"><span class="menu">TV v živo</span></a>
+                        <a class="menu" href="#radio" target="_self"><span class="menu">Radio</span></a>
+                        <a class="menu" href="#install" target="_self"><span class="menu">Namestitev</span></a>
+                    </td>
+                </tr>
+            </table>
         </div>
         
-        <div class="row">
-            <div class="column">
-                <div class="featured">
-                    Namesti<br>
-                    <span style=""><a href="https://raw.githubusercontent.com/dam-pav/repo.rtvslo.kodi/master/repository.dam-pav.rtvslo/repository.dam-pav.rtvslo-1.0.0.zip"
-                        target="_blank">REPOZITORIJ</a></span><br>
-                    za Kodi<br>
-                    <br>
-                    Vključuje dodatke:<br>
-                    - plugin.rtvslo.podcast -<br>
-                    - plugin.rtvslo.live -<br>
-                    <br>
-                </div>
-                <div class="featured">
-                    <span>---</span>
-                </div>
-                <div class="post">
-                    <span>Za poln dostop do vsebin v arhivu si pridobite uporabniško ime in geslo na <a
-                        href="https://www.rtvslo.si/registracija" target="_blank">https://www.rtvslo.si/registracija</a>
-                    in oboje vnesite v konfiguracijo dodatka.</span>
-                </div>
-                <div class="featured">
-                    <span>---</span>
-                </div>
-                <div class="post">
-                    <span style="color: Red;">Pomembno obvestilo! Verzije Kodi Leia v18.0 - v18.1 streamov RTVSLO (in morda še katerih
-                        drugih) ne predvajajo pravilno. Zaenkrat preverjeno pravilno deluje samo v17.6 Krypton.</span>
-                </div>
-                <div class="featured">
-                    <span>---</span>
-                </div>
-                <div class="post-title">
-                    <span>- plugin.rtvslo.podcast -</span>
-                </div>
-                <div class="post">
-                    <span>
-                        Oddaje:<br>
-                        <img src="podcasts.png"><br><br>
-                        Oddaje, alternativni pogled:<br>
-                        <img src="podcasts2.png"><br><br>
-                        Media information:<br>
-                        <img src="mediainfo.png"><br><br>
-                    </span>
-                </div>
+        <div class="column single">
+            <div class="post alert">
+                <span>Pomembno obvestilo! Verzije Kodi Leia v18.0 - v18.2 streamov RTVSLO (in morda še katerih
+                    drugih) še vedno ne predvajajo pravilno. Zaenkrat preverjeno pravilno deluje samo v17.6 Krypton.</span>
             </div>
-            <div class="column">
-                <div class="post">
-                    <span>
-                        Zaznamek ("Poglej kasneje"):<br>
-                        <img src="setmark.png"><br><br>
-                        Nastavitve:<br>
-                        <img src="settings.png"><br><br>
-                        Novo iskanje:<br>
-                        <img src="newsearch.png"><br><br>
-                        Zadetki:<br>
-                        <img src="searchhits.png"><br><br>
-                    </span>
-                </div>
+            <div class="post">
+                <span>Za poln dostop do vsebin v arhivu si pridobite uporabniško ime in geslo na <a
+                    href="https://www.rtvslo.si/registracija" target="_blank">https://www.rtvslo.si/registracija</a>
+                in oboje vnesite v konfiguracijo dodatka.</span>
             </div>
-            <div class="column">
-                <div class="post">
-                    <span>
-                        Zgodovina iskanja:<br>
-                        <img src="searchhistory.png"><br><br>
-                    </span>
-                </div>
-                <div class="featured">
-                    <span>---</span>
-                </div>
-                <div class="post-title">
-                    <span>- plugin.rtvslo.live -</span>
-                </div>
-                <div class="post">
-                    Kanali: z opisom trenutno predvajane oddaje<br>
-                    <img src="channels.png"><br><br>
-                    Kanali: info<br>
-                    <img src="channelinfo.png"><br><br>
-                </div>
-                <div class="featured">
-                    <span>---</span>
-                </div>
-                <div class="featured">
-                    Namesti<br>
-                    <span style=""><a href="https://raw.githubusercontent.com/dam-pav/repo.rtvslo.kodi/master/repository.dam-pav.rtvslo/repository.dam-pav.rtvslo-1.0.0.zip"
-                        target="_blank">REPOZITORIJ</a></span><br>
-                    za Kodi<br>
-                    <br>
-                </div>
+            <a class="button" id="download" href="https://raw.githubusercontent.com/dam-pav/repo.rtvslo.kodi/master/repository.dam-pav.rtvslo/repository.dam-pav.rtvslo-1.0.0.zip"
+                target="_blank"><div class="button">DOWNLOAD</div></a>
+        </div>
+        <div class="column">
+            <div class="post title" id="tvpodcast">
+                TV - podcasti
             </div>
+            <div class="post">
+                <img src="img/podcasts.png" alt="Oddaje">
+                <img src="img/podcasts2.png" alt="Oddaje, alternativni pogled">
+                <img src="img/mediainfo.png" alt="Media information">
+                <img src="img/setmark.png" alt="Poglej kasneje">
+                <img src="img/settings.png" alt="Nastavitve">
+                <img src="img/newsearch.png" alt="Novo iskanje">
+                <img src="img/searchhits.png" alt="Zadetki">
+                <img src="img/searchhistory.png" alt="Zgodovina iskanja">
+            </div>
+        </div>
+        <div class="post featured">
+            <a class="menu" href="#top" target="_self"><span class="menu">Nazaj</span></a>
+        </div>
+        <div class="column">
+            <div class="post title" id="tvlive">
+                TV - v živo
+            </div>
+            <div class="post">
+                <img src="img/channels.png" alt="Kanali: z opisom trenutno predvajane oddaje">
+                <img src="img/channelinfo.png" alt="Kanali: info">
+            </div>
+        </div>
+        <div class="post featured">
+            <a class="menu" href="#top" target="_self"><span class="menu">Nazaj</span></a>
+        </div>
+        <div class="column">
+            <div class="post title" id="radio">
+                Radio - podcasti in v živo
+            </div>
+            <div class="post">
+                <img src="img/radio-podcasts.png" alt="Radio oddaje">
+                <img src="img/radio-channels.png" alt="Radio kanali: z opisom trenutno predvajane oddaje">
+            </div>
+        </div>
+        <div class="post featured">
+            <a class="menu" href="#top" target="_self"><span class="menu">Nazaj</span></a>
+        </div>
+        <div class="column">
+            <div class="post title" id="install">
+                Namestitev
+            </div>
+            <div class="post">
+                <img src="img/install-1.png" alt="Namestitev repozitorija iz downloadane zip datoteke.">
+                <img src="img/install-2.png" alt="Datoteko naložimo z mesta, kamor je bila downloadana.">
+                <img src="img/install-3.png" alt="Dodatke (add-on) namestimo iz repozitorija.">
+                <img src="img/install-4.png" alt="Repozitorij se trenutno imenuje RTV Slovenija.">
+                <img src="img/install-5.png" alt="Repozitorij vsebuje samega sebe in dva dodatka, enega za podcaste in enega za žive oddaje. Oba vsebujeta TV in radijske vsebine in se zato hkrati uvrščata med music in video dodatke.">
+                <img src="img/install-6.png" alt="Izberemo želeni dodatek.">
+                <img src="img/install-7.png" alt="Sprožimo namestitev.">
+                <img src="img/install-8.png" alt="Dodatek je nameščen.">
+                <img src="img/install-9.png" alt="Vsi nameščeni dodatki so pripravljeni za konfiguracijo in uporabo.">
+            </div>
+        </div>
+        <div class="post featured">
+            <a class="menu" href="#top" target="_self"><span class="menu">Nazaj</span></a>
+        </div>
+        <div class="column single">
+            <a class="button" id="download" href="https://raw.githubusercontent.com/dam-pav/repo.rtvslo.kodi/master/repository.dam-pav.rtvslo/repository.dam-pav.rtvslo-1.0.0.zip"
+                target="_blank"><div class="button">DOWNLOAD</div></a>
         </div>
         <div class="footer">
             2019<br>

@@ -1,0 +1,166 @@
+/* Elements */
+body {
+    background: white; 
+    color: navy; 
+    font-family: Lato, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a:link {color: blue; font-weight: bold;}
+a:visited {color: blue; font-weight: bold;}
+a:hover {color: crimson; font-weight: bold;}
+a:active {color: darkred; font-weight: bolder;}
+
+img {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 500px;
+    margin-bottom: 10px;}
+
+/* Posts */
+.post {
+    vertical-align: top;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.post.featured {
+    text-align: center; 
+}
+
+.post.alert {
+    color: Red;
+    border: 3px solid red;
+    padding: 10px;
+    
+}
+
+.post.title {
+    height: 40px;
+    text-align: center; 
+    line-height: 40px;
+    background-color: blue;
+    color: white;
+    column-span: all;
+    margin-bottom: 10px;
+}
+
+.button {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 3px solid blue;
+    background-color: greenyellow;
+    color: blue;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold; 
+    line-height: 50px;
+    column-span: all;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+.button:hover {
+    background-color: blue;
+    color: white;
+}
+
+a.button:link {
+    text-decoration: none;
+    border: none;
+}
+a.button:visited {color: blue; font-weight: normal;}
+a.button.active {color: darkred; font-weight: bolder;}
+
+/* Style the header */
+.header {
+    text-align: left;
+    padding: 10px;
+    font-size: 30px;
+}
+
+img.header {width: 150; height: 150; padding: 0px}
+
+.menu {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 3px solid blue;
+    background-color: white;
+    color: blue;
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold; 
+    line-height: 30px;
+    padding: 0px;
+}
+
+span.menu {
+    padding: 0px 30px;
+}
+
+.menu:hover {
+    background-color: greenyellow;    
+}
+
+a.menu:link {
+    text-decoration: none;
+    border: none;
+}
+a.menu:visited,
+a.menu.active {
+    color: white;    
+}
+
+/* Create multi columns */
+.column {
+    padding: 10px;
+    margin: auto;
+    width: 1560px;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.column.single {
+    padding: 10px;
+    margin: auto;
+    width: 520px;
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+}
+
+/* Style the footer */
+.footer {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - reduces column numbers */
+@media (max-width: 1550px) {
+    .column {
+        padding: 10px;
+        margin: auto;
+        width: 1040px;
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+    }
+}
+
+@media (max-width: 1060px) {
+    .column {
+        padding: 10px;
+        margin: auto;
+        width: 520px;
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+}
