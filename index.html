@@ -37,8 +37,9 @@
         * {
             box-sizing: border-box;
         }
-        img {width: 400px}
-        img.header {width: 200px; height: 200px}
+        
+        img {width: 500px}
+        
         body {
             background: #71bfff; 
             color: White; 
@@ -47,15 +48,17 @@
 
         /* Style the header */
         .header {
-            text-align: center;
-            padding: 30px;
+            text-align: left;
+            padding: 10px;
             font-size: 35px;
         }
+
+        img.header {width: 200; height: 200; padding: 0px}
 
         /* Create three equal columns that floats next to each other */
         .column {
             float: left;
-            width: 400px;
+            width: 520px;
             padding: 10px;
         }
 
@@ -79,16 +82,19 @@
         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
         @media (max-width: 600px) {
             .column {
-                width: 400px;
+                width: 520px;
             }
         }
     </style>
 
     <body lang="sl">
         <div class="header">
-            <img src="dam-pav.logo.jpg" alt="" style="width: 200px; height: 200px; border: 0;"><br>
+            <img class="header" src="dam-pav.logo.jpg" alt="">
         </div>
         
+        <table>
+            <td align="center">
+                <tr>
         <div class="row">
             <div class="column">
                 <div class="featured">
@@ -125,12 +131,12 @@
                 </div>
                 <div class="post">
                     <span>
-                        Oddaje:
-                        <img src="podcasts.png">
-                        Oddaje, alternativni pogled:
-                        <img src="podcasts2.png">
-                        Media information:
-                        <img src="mediainfo.png">
+                        Oddaje:<br>
+                        <img src="podcasts.png"><br><br>
+                        Oddaje, alternativni pogled:<br>
+                        <img src="podcasts2.png"><br><br>
+                        Media information:<br>
+                        <img src="mediainfo.png"><br><br>
                     </span>
                 </div>
                 <div class="featured">
@@ -140,22 +146,22 @@
             <div class="column">
                 <div class="post">
                     <span>
-                        Zaznamek ("Poglej kasneje"):
-                        <img src="setmark.png">
-                        Nastavitve:
-                        <img src="settings.png">
-                        Novo iskanje:
-                        <img src="newsearch.png">
-                        Zadetki:
-                        <img src="searchhits.png">
+                        Zaznamek ("Poglej kasneje"):<br>
+                        <img src="setmark.png"><br><br>
+                        Nastavitve:<br>
+                        <img src="settings.png"><br><br>
+                        Novo iskanje:<br>
+                        <img src="newsearch.png"><br><br>
+                        Zadetki:<br>
+                        <img src="searchhits.png"><br><br>
                     </span>
                 </div>
             </div>
             <div class="column">
                 <div class="post">
                     <span>
-                        Zgodovina iskanja:
-                        <img src="searchhistory.png">
+                        Zgodovina iskanja:<br>
+                        <img src="searchhistory.png"><br><br>
                     </span>
                 </div>
                 <div class="featured">
@@ -165,10 +171,10 @@
                     <span>- plugin.rtvslo.live -</span>
                 </div>
                 <div class="post">
-                    Kanali: z opisom trenutno predvajane oddaje
-                    <img src="channels.png">
-                    Kanali: info
-                    <img src="channelinfo.png">
+                    Kanali: z opisom trenutno predvajane oddaje<br>
+                    <img src="channels.png"><br><br>
+                    Kanali: info<br>
+                    <img src="channelinfo.png"><br><br>
                 </div>
                 <div class="featured">
                     <span>---</span>
@@ -182,7 +188,9 @@
                 </div>
             </div>
         </div>
-        
+        </tr>
+        </td>
+        </table>
         <div class="footer">
             2019<br>
             <a href="https://github.com/dam-pav" target="_blank">GITHUB</a><br>
