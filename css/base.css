@@ -53,7 +53,7 @@ img {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border: 3px solid blue;
-    background-color: greenyellow;
+    background-color: skyblue;
     color: blue;
     height: 50px;
     width: 200px;
@@ -88,7 +88,7 @@ a.button.active {color: darkred; font-weight: bolder;}
 img.header {width: 150; height: 150; padding: 0px}
 
 .strip {
-    background-color: greenyellow;
+    background-color: skyblue;
     white-space: nowrap;
 }
 
@@ -100,7 +100,7 @@ img.header {width: 150; height: 150; padding: 0px}
 
 .menu {
     color: blue;
-    background-color: greenyellow;
+    background-color: skyblue;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     /* border: 3px solid blue; */
@@ -153,9 +153,10 @@ a.menu.active {
 .footer {
     padding: 10px;
     text-align: center;
+    margin: auto;
 }
 
-/* Responsive layout - reduces column numbers */
+/* Responsive layout - reduces column count */
 @media (max-width: 1600px) {
     .column {
         padding: 10px;
