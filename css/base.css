@@ -207,7 +207,7 @@ a.menu.active {
     }
 }
 
-@media (max-width: 550px) {
+@media only screen and (max-width: 550px) {
     .column {
         padding: 10px;
         margin: auto;
