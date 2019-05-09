@@ -206,3 +206,45 @@ a.menu.active {
         text-align: left;
     }
 }
+
+@media (max-width: 550px) {
+    .column {
+        padding: 10px;
+        margin: auto;
+        width: 100%;
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+
+    .column.single {
+        padding: 10px;
+        margin: auto;
+        width: 100%;
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+    
+        .header {
+        margin: auto;
+        width: 520px;
+        text-align: left;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    .center {
+        margin: auto;
+        width: 100%;
+        text-align: left;
+    }
+
+    img {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 100%;
+        margin-bottom: 10px;}
+
+}
+
