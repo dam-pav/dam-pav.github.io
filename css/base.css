@@ -17,8 +17,6 @@ a:active {color: darkred; font-weight: bolder;}
     /* Posts */
 .post {
     vertical-align: top;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
     margin-bottom: 10px;
 }
 
@@ -43,8 +41,10 @@ a:active {color: darkred; font-weight: bolder;}
 }
 
 .button {
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: 3px solid blue;
     background-color: skyblue;
     color: blue;
@@ -97,8 +97,10 @@ img.header {width: 100; height: 100; padding: 0px}
 .menu {
     color: blue;
     background-color: skyblue;
+    /*
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    */
     /* border: 3px solid blue; */
     height: 40px;
     /*width: 200px;*/
@@ -157,8 +159,10 @@ a.menu.active {
 
 img {
     width: 100%;
+    /*
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    */
     margin-bottom: 10px;
 }
 
